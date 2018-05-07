@@ -175,7 +175,7 @@ span.q {
     font-weight: bold;
 }
 
-span.q:before {
+span.q::before {
     content: "Q) ";
     color: #999999;
     font-family: "Roboto Mono", monospace;
@@ -187,7 +187,7 @@ span.a {
     font-style: italic;
 }
 
-span.a:before {
+span.a::before {
     content: "A) ";
     color: #999999;
     font-family: "Roboto Mono", monospace;
