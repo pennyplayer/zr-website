@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Raleway:200|RobotoMono');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+article {
+    position: absolute;
+    left: 234px;
+}
+
+header {
+    margin-bottom: 10px;
+}
+
+section {
+    border-bottom: 1px solid #cccccc;
+    text-align: justify;
+}
+
+section#description {
+    display: flex;
+}
+section#description > div {
+    margin-right: 20px;
+    flex: 50%;
+}
+
+section#applications {
+    display: block;
+}
+
+section#applications > a {
+    text-decoration: none;
+}
+
+#zr-logo {
+    height: 100px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+h1 {
+    font-size: 70px;
+    margin-left: 20px;
+    font-family: 'Raleway', sans-serif;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 20px;
+}
+
+h2 {
+    
+}
+
+a:link {
+    color: inherit;
+    transition: color ease-in-out 0.1s;
+}
+
+a:hover {
+    color: black;
+}
+
+button {
+    width: 200px;
+}
+
+.video {
+    float: right;
+    flex: 50%;
+    height: 260px;
+}
+
+.sidebar {
+    float: left;
+    height: calc(100% - 16px);
+    width: 214px;
+    position: fixed;
+    border-right: 1px solid #eeeeee;
+}
+
+
+nav > h3 {
+    padding: 3px;
+    margin: 0;
+    font-weight: normal;
+}
+
+.no-top-margin {
+    margin-top: 0;
+}
+
+.content {
+    display: inline-block;
+    float: right;
+    width: 82%;
+}
+
+div.contact {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    margin: 0 0 0 2em;
+    padding: 0;
+}
+
+section#contact > h2 {
+    margin-bottom: 10px;
+}
+
+div.contact > ul {
+    margin: 0 0 0 10px;
+}
+
+section#faq > p > ul {
+    margin: 0 0 0 0;
+}
+
+.sidebar > nav {
+    border-bottom: 1px solid #eeeeee;
+    padding: 5px;
+    transition: color ease-in-out 0.1s;
+}
+
+.sidebar > nav:hover {
+    color: black;
+}
+
+nav > a > div {
+    width: 100%;
+    padding-bottom: 5px;
+    margin-left: 20px;
+    transition: color ease-in-out 0.1s, margin-left ease-in-out 0.1s;
+    color: #555555;
+}
+
+nav > a > div:hover {
+    color: black;
+    margin-left: 25px;
+}
+
+nav > a:link {
+    text-decoration: none;
+    color: inherit;
+}
+
+a.inactive {
+    color: #555555;
+    font-style: italic;
+    text-decoration: none;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #eeeeee;
+}
+
+span.q {
+    display: block;
+    font-weight: bold;
+}
+
+span.q:before {
+    content: "Q) ";
+    color: #999999;
+    font-family: "Roboto Mono", monospace;
+    font-weight: normal;
+}
+
+span.a {
+    display: block;
+    font-style: italic;
+}
+
+span.a:before {
+    content: "A) ";
+    color: #999999;
+    font-family: "Roboto Mono", monospace;
+    font-style: normal;
+i
