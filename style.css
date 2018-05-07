@@ -1,13 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto|Raleway:200|RobotoMono');
 
+html {
+}
+
 body {
     font-family: 'Roboto', sans-serif;
 }
 
+main {
+    margin-right: 10px;
+}
+
 article {
     position: absolute;
+    display: inline-block;
     left: 234px;
+    right: 15px;
+    padding: 10px;
+    border-right: 1px solid #eeeeee;
 }
+
 
 header {
     margin-bottom: 10px;
@@ -69,7 +81,7 @@ button {
 .video {
     float: right;
     flex: 50%;
-    height: 260px;
+    padding-bottom: 20px;
 }
 
 .sidebar {
@@ -89,12 +101,6 @@ nav > h3 {
 
 .no-top-margin {
     margin-top: 0;
-}
-
-.content {
-    display: inline-block;
-    float: right;
-    width: 82%;
 }
 
 div.contact {
