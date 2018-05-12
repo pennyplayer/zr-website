@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="style.css">
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119121805-1"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script>
   	    window.dataLayer = window.dataLayer || [];
   	    function gtag(){dataLayer.push(arguments);}
@@ -24,7 +25,7 @@
         <main>
         <aside class="sidebar">
             <nav>
-                <h3><a href="index.html"><div>Zero Robotics Australia</div></a></h3>
+                <h3>Zero Robotics Australia</h3>
                 <!-- <a class="inactive"><div>ZR Australia Handbook</div></a> -->
                 <a href="index.html#applications"><div>Registration</div></a>
                 <a href="index.html#registration"><div>Launch Event</div></a>
@@ -33,7 +34,7 @@
                 <a href="index.html#contact"><div>Contact Us</div></a>
             </nav>
             <nav>
-                <h3>Qualifying Competition</h3><h3 id="new">(NEW)</h3>
+                <h3>Qualifying Competition</h3>
                 <a href="2018_AustralianQualifyingCompetition.pdf" target="_blank"><div>2018 Handbook</div></a>
                 <a href="ZeroRoboticsAustralianHandbook_2018.pdf" target="_blank"><div>Game Rules</div></a>
 		<a href="AusLaunchEventSlides.pdf" target="_blank"><div>Launch Event Slides</div></a>
@@ -318,4 +319,16 @@
         </article>
         </main>
     </body>
+    <script>
+        $('nav > a').hide();
+        $('nav').hover(
+            function() {
+                $(this).children('a').show();
+                console.log($(this));
+            }, function() {
+                $(this).children('a').hide();
+                console.log("out");
+            }
+        );
+    </script>
 </html>
