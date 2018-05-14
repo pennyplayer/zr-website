@@ -45,11 +45,12 @@ section {
 
 section#description {
     padding-top: 16px;
+    padding-bottom: 16px;
     border-top: 1px solid #cccccc;
     display: flex;
 }
 section#description > div {
-    margin-right: 20px;
+    margin-right: 10px;
     flex: 50%;
 }
 
@@ -60,6 +61,11 @@ section#applications {
 section#applications > a {
     text-decoration: none;
 }
+
+section > p,  section > div > p {
+    /* margin-left: 10px; */
+}
+
 
 #usyd-zr-logo {
     height: 99px;
@@ -98,9 +104,12 @@ button {
 }
 
 .video {
-    float: right;
     flex: 50%;
-    padding-bottom: 20px;
+    /* margin-bottom: 20px; */
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-left: 1px solid #eeeeee;
 }
 
 .sidebar {
@@ -144,7 +153,7 @@ section#contact > h2 {
 }
 
 div.contact > ul {
-    margin: 0 0 0 10px;
+    margin: 0;
 }
 
 section#faq > p > ul {
