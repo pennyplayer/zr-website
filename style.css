@@ -113,9 +113,11 @@ button {
 
 
 nav > h3 {
+    /* width: 100%; */
     padding: 3px;
     margin: 0;
     font-weight: normal;
+    /* box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.16); */
 }
 nav > h3#new{
     padding: 3px;
@@ -156,10 +158,14 @@ section#faq > p > ul {
 .sidebar > nav {
     border-bottom: 1px solid #eeeeee;
     padding: 5px;
-    transition: color ease-in-out 0.1s;
+    max-height: 27px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: color ease-in-out 0.1s, max-height ease-in-out 0.5s;
 }
 
 .sidebar > nav:hover {
+    max-height: 500px;
     color: black;
 }
 
