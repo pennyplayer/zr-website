@@ -44,6 +44,8 @@ section {
 }
 
 section#description {
+    padding-top: 16px;
+    border-top: 1px solid #cccccc;
     display: flex;
 }
 section#description > div {
@@ -60,7 +62,7 @@ section#applications > a {
 }
 
 #usyd-zr-logo {
-    width: 90%;
+    height: 99px;
 }
 #zr-logo {
     height: 100px;
@@ -70,12 +72,12 @@ section#applications > a {
 
 h1 {
     font-size: 70px;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     font-family: 'Raleway', sans-serif;
     font-weight: 200px;
     display: inline-block;
     vertical-align: middle;
-    margin: 20px;
+    margin: 0;
 }
 
 h2 {
@@ -145,6 +147,10 @@ div.contact > ul {
 
 section#faq > p > ul {
     margin: 0 0 0 0;
+}
+
+.sidebar > nav:first-of-type {
+    border-top: 1px solid #eeeeee;
 }
 
 .sidebar > nav {
