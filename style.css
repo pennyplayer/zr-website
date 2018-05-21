@@ -184,7 +184,7 @@ nav > h3 > a:link {
     color: inherit;
 }
 
-nav > h3 > a {
+nav > h3 > a > div{
     color: black
 }
 /*yeah, Pen's learning css - end*/
@@ -200,6 +200,11 @@ nav > a > div {
 nav:hover a div {
     margin-left: 20px;
     color: #555555;
+}
+
+nav:hover h3 a div {
+    margin-left: 0px;
+    color: black
 }
 
 nav > a > div:hover {
