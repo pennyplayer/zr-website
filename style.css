@@ -262,4 +262,14 @@ span.a::before {
     color: #999999;
     font-family: "Roboto Mono", monospace;
     font-style: normal;
-i
+}
+
+/*Code for Student Resources*/
+span.link {
+    display: block;
+    font-weight: bold;
+}
+span.info {
+    display: block;
+    font-style: italic;
+}
