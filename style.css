@@ -179,13 +179,14 @@ section#faq > p > ul {
 }
 
 /*yeah, Pen's learning css*/
-nav > h3 > a:link {
+nav > h3 > a:link,
+nav > h3 > a:visited {
     text-decoration: none;
     color: inherit;
 }
 
-nav > h3 > a > div{
-    color: black
+nav > h3 > a > div {
+    color: inherit;
 }
 /*yeah, Pen's learning css - end*/
 
