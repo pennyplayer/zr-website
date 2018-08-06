@@ -20,22 +20,21 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-main {
-    margin-right: 10px;
-}
-
 article {
-    position: absolute;
+    position: relative;
     display: inline-block;
-    left: 225px;
-    right: 15px;
     padding: 10px;
-    border-right: 1px solid #eeeeee;
+    width: 50%;
+    /*border-right: 1px solid #eeeeee;*/
 }
 
 
 header {
     margin-bottom: 10px;
+    outline: none
+    width: 100%
+    background-color: lightblue;
+    background-color: #000000;
 }
 
 section {
@@ -76,14 +75,28 @@ section > p,  section > div > p {
     vertical-align: middle;
 }
 
+#studentPic {
+    height: 200px;
+}
+#groupPic {
+    height: 200px;
+}
+#GregPreso {
+    height: 200px;
+}
+#Mentor {
+    height: 200px;
+}
+
 h1 {
-    font-size: 70px;
-    /* margin-left: 20px; */
+    font-size: 50px;
+    margin-left: 20px;
     font-family: 'Raleway', sans-serif;
-    font-weight: 200px;
+    font-weight: 500px;
     display: inline-block;
     vertical-align: middle;
     margin: 0;
+    color: #ffffff;
 }
 
 h2 {
@@ -115,11 +128,20 @@ button {
 .sidebar {
     float: left;
     height: calc(100% - 16px);
-    width: 214px;
-    position: fixed;
-    border-right: 1px solid #eeeeee;
+    width: 24%;
+    position: relative;
+    /*border-right: 1px solid #eeeeee;*/
 }
 
+.sidebarRight {
+    float: right;
+    width: 18%;
+    position: relative;
+}
+
+.sidebarRight > img {
+    margin-top:20px;
+}
 
 nav > h3 {
     /* width: 100%; */
@@ -164,28 +186,10 @@ section#faq > p > ul {
     border-top: 1px solid #eeeeee;
 }
 
-.sidebar > nav {
-    border-bottom: 1px solid #eeeeee;
-    padding: 5px;
-    max-height: 27px;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    transition: color ease-in-out 0.1s, max-height ease-in-out 0.5s;
-}
-
-.sidebar > nav:hover {
-    max-height: 500px;
-    color: black;
-}
-
 /*yeah, Pen's learning css*/
 nav > h3 > a:link,
 nav > h3 > a:visited {
     text-decoration: none;
-    color: inherit;
-}
-
-nav > h3 > a > div {
     color: inherit;
 }
 /*yeah, Pen's learning css - end*/
@@ -193,14 +197,9 @@ nav > h3 > a > div {
 nav > a > div {
     width: 100%;
     padding-bottom: 5px;
-    margin-left: 0;
-    transition: color ease-in-out 0.1s, margin-left ease-in-out 0.1s;
-    color: transparent;
-}
-
-nav:hover a div {
     margin-left: 20px;
-    color: #555555;
+    color: #555555
+    /*transition: color ease-in-out 0.1s, margin-left ease-in-out 0.1s;*/
 }
 
 nav:hover h3 a div {
