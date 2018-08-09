@@ -17,6 +17,7 @@ html {
 }
 
 body {
+    margin: 0;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -24,6 +25,8 @@ article {
     position: relative;
     display: inline-block;
     padding: 10px;
+    margin-left: 230px;
+    margin-top: 106px;
     width: 50%;
     /*border-right: 1px solid #eeeeee;*/
     color: #131516;
@@ -31,9 +34,11 @@ article {
 
 
 header {
+    position: fixed;
+    border: 8px solid white;
+    z-index: 10;
     margin-bottom: 10px;
-    outline: none
-    width: 100%
+    width: 100%;
     background-color: lightblue;
     background-color: #000000;
 }
@@ -44,9 +49,9 @@ section {
 }
 
 section#description {
-    padding-top: 16px;
+    padding-top: 0;
     padding-bottom: 16px;
-    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
     display: flex;
 }
 section#description > div {
@@ -68,8 +73,10 @@ section > p,  section > div > p {
 
 
 #usyd-zr-logo {
-    height: 99px;
+    height: 100px;
+    float: right;
 }
+
 #zr-logo {
     height: 100px;
     display: inline-block;
@@ -91,12 +98,11 @@ section > p,  section > div > p {
 
 h1 {
     font-size: 50px;
+    margin: 0;
     margin-left: 20px;
     font-family: 'Raleway', sans-serif;
-    font-weight: 500px;
     display: inline-block;
     vertical-align: middle;
-    margin: 0;
     color: #ffffff;
 }
 
@@ -130,12 +136,15 @@ button {
     float: left;
     height: calc(100% - 16px);
     width: 24%;
-    position: relative;
-    /*border-right: 1px solid #eeeeee;*/
+    margin-top: 100px;
+    position: fixed;
+    padding: 10px;
 }
 
 .sidebarRight {
     float: right;
+    margin-top: 106px;
+    padding: 10px;
     width: 18%;
     position: relative;
 }
@@ -184,7 +193,6 @@ section#faq > p > ul {
 }
 
 .sidebar > nav:first-of-type {
-    border-top: 1px solid #eeeeee;
     width: 215px;
 }
 
