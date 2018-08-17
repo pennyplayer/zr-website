@@ -14,6 +14,7 @@
 }
 
 html {
+    background-color: white;
 }
 
 body {
@@ -206,8 +207,8 @@ nav > a > div {
     width: 100%;
     padding-bottom: 5px;
     margin-left: 20px;
-    color: #555555
-    /*transition: color ease-in-out 0.1s, margin-left ease-in-out 0.1s;*/
+    color: #555555;
+    transition: color ease-in-out 0.1s, margin-left ease-in-out 0.1s;
 }
 
 nav:hover h3 a div {
