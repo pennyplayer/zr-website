@@ -12,26 +12,102 @@
     font-family: "Roboto_Mono";
     src: url("Roboto_Mono-Regular.ttf");
 }
+@font-face {
+    font-family: "Ubuntu";
+    src: url(https://fonts.gstatic.com/s/ubuntucondensed/v8/u-4k0rCzjgs5J7oXnJcM_0kACGMtT-Tfq8Ho.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
 
 html {
     background-color: white;
 }
 
 body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    font-family: 'Ubuntu', sans-serif;
+    font-size:16px;
 }
 
 article {
     position: relative;
     display: inline-block;
-    padding: 10px;
-    margin-left: 240px;
+    margin: 10%;
     margin-top: 120px;
-    width: 50%;
+    width: 40%;
+    min-width: 450px;
     color: #131516;
 }
 
+@media only screen and (max-width:890px) {
+    article {
+        margin: 7%;
+        margin-top: 120px;
+    }
+}
+@media only screen and (max-width:828px) {
+    article {
+	margin:5%;
+	margin-top: 120px;
+    }
+}
+@media only screen and (max-width:789px) {
+    article {
+	margin:3%;
+	margin-top: 120px;
+    }
+}
+
+.sidebarRight {
+    float: right;
+    margin-top: 120px;
+    width: 18%;
+    position: relative;
+}
+
+#studentPic {
+    height: 200px;
+}
+#groupPic {
+    height: 200px;
+}
+#GregPreso {
+    height: 200px;
+}
+#Mentor {
+    height: 200px;
+}
+
+@media only screen and (max-width: 1151px) {
+   /*for smaller screens */
+   .sidebarRight {
+	bottom: 0;
+	width: 100%;
+	position: relative;
+	
+	display: flex;
+	flex-wrap: nowrap;
+   }
+}
+
+.sidebar {
+    float: left;
+    height: calc(100% - 16px);
+    margin-top: 100px;
+    position: relative;
+    width: 13%;
+    min-width: 230px;
+    padding: 10px;
+    border-right: 1px solid #dddddd;
+}
+
+@media only screen and (max-width:757px) {
+/*Go full mobile - make pop out menu*/
+/* Not done yet! */
+    article {
+	margin: 0 auto;
+	margin-top: 120px;
+    }
+}
 
 header {
     position: fixed;
@@ -71,7 +147,6 @@ section > p,  section > div > p {
     /* margin-left: 10px; */
 }
 
-
 #usyd-zr-logo {
     height: 100px;
 }
@@ -80,19 +155,6 @@ section > p,  section > div > p {
     height: 100px;
     display: inline-block;
     vertical-align: middle;
-}
-
-#studentPic {
-    height: 200px;
-}
-#groupPic {
-    height: 200px;
-}
-#GregPreso {
-    height: 200px;
-}
-#Mentor {
-    height: 200px;
 }
 
 h1 {
@@ -129,23 +191,6 @@ button {
     padding-top: 5px;
     padding-bottom: 5px;
     border-left: 1px solid #eeeeee;
-}
-
-.sidebar {
-    float: left;
-    height: calc(100% - 16px);
-    margin-top: 100px;
-    position: fixed;
-    padding: 10px;
-    border-right: 1px solid #dddddd;
-}
-
-.sidebarRight {
-    float: right;
-    margin-top: 120px;
-    padding: 10px;
-    width: 18%;
-    position: relative;
 }
 
 .sidebarRight > img {
@@ -197,7 +242,7 @@ section#faq > p > ul {
 }
 
 .sidebar > nav:first-of-type {
-    width: 215px;
+    width: 230px;
 }
 
 /*yeah, Pen's learning css*/
