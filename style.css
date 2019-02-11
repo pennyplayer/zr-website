@@ -12,27 +12,109 @@
     font-family: "Roboto_Mono";
     src: url("Roboto_Mono-Regular.ttf");
 }
+@font-face {
+    font-family: "Ubuntu";
+    src: url(https://fonts.gstatic.com/s/ubuntucondensed/v8/u-4k0rCzjgs5J7oXnJcM_0kACGMtT-Tfq8Ho.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
 
 html {
+    background-color: white;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    font-family: 'Ubuntu', sans-serif;
+    font-size:16px;
 }
 
 article {
     position: relative;
     display: inline-block;
-    padding: 10px;
-    width: 50%;
-    /*border-right: 1px solid #eeeeee;*/
+    margin: 10%;
+    margin-top: 120px;
+    width: 40%;
+    min-width: 450px;
+    color: #131516;
 }
 
+@media only screen and (max-width:890px) {
+    article {
+        margin: 7%;
+        margin-top: 120px;
+    }
+}
+@media only screen and (max-width:828px) {
+    article {
+	margin:5%;
+	margin-top: 120px;
+    }
+}
+@media only screen and (max-width:789px) {
+    article {
+	margin:3%;
+	margin-top: 120px;
+    }
+}
+
+.sidebarRight {
+    float: right;
+    margin-top: 120px;
+    width: 18%;
+    position: relative;
+}
+
+#studentPic {
+    height: 200px;
+}
+#groupPic {
+    height: 200px;
+}
+#GregPreso {
+    height: 200px;
+}
+#Mentor {
+    height: 200px;
+}
+
+@media only screen and (max-width: 1151px) {
+   /*for smaller screens */
+   .sidebarRight {
+	bottom: 0;
+	width: 100%;
+	position: relative;
+	
+	display: flex;
+	flex-wrap: nowrap;
+   }
+}
+
+.sidebar {
+    float: left;
+    height: calc(100% - 16px);
+    margin-top: 100px;
+    position: relative;
+    width: 13%;
+    min-width: 230px;
+    padding: 10px;
+    border-right: 1px solid #dddddd;
+}
+
+@media only screen and (max-width:757px) {
+/*Go full mobile - make pop out menu*/
+/* Not done yet! */
+    article {
+	margin: 0 auto;
+	margin-top: 120px;
+    }
+}
 
 header {
+    position: fixed;
+    border: 8px solid white;
+    z-index: 10;
     margin-bottom: 10px;
-    outline: none
-    width: 100%
+    width: 100%;
     background-color: lightblue;
     background-color: #000000;
 }
@@ -43,9 +125,9 @@ section {
 }
 
 section#description {
-    padding-top: 16px;
+    padding-top: 0;
     padding-bottom: 16px;
-    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
     display: flex;
 }
 section#description > div {
@@ -65,37 +147,23 @@ section > p,  section > div > p {
     /* margin-left: 10px; */
 }
 
-
 #usyd-zr-logo {
-    height: 99px;
+    height: 100px;
 }
+
 #zr-logo {
     height: 100px;
     display: inline-block;
     vertical-align: middle;
 }
 
-#studentPic {
-    height: 200px;
-}
-#groupPic {
-    height: 200px;
-}
-#GregPreso {
-    height: 200px;
-}
-#Mentor {
-    height: 200px;
-}
-
 h1 {
     font-size: 50px;
+    margin: 0;
     margin-left: 20px;
     font-family: 'Raleway', sans-serif;
-    font-weight: 500px;
     display: inline-block;
     vertical-align: middle;
-    margin: 0;
     color: #ffffff;
 }
 
@@ -125,20 +193,6 @@ button {
     border-left: 1px solid #eeeeee;
 }
 
-.sidebar {
-    float: left;
-    height: calc(100% - 16px);
-    width: 24%;
-    position: relative;
-    /*border-right: 1px solid #eeeeee;*/
-}
-
-.sidebarRight {
-    float: right;
-    width: 18%;
-    position: relative;
-}
-
 .sidebarRight > img {
     margin-top:20px;
 }
@@ -149,6 +203,11 @@ nav > h3 {
     margin: 0;
     font-weight: normal;
     /* box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.16); */
+}
+nav > h4 {
+    padding:10px;
+    margin:0;
+    font-weight:normal;
 }
 nav > h3#new{
     padding: 3px;
@@ -183,7 +242,7 @@ section#faq > p > ul {
 }
 
 .sidebar > nav:first-of-type {
-    border-top: 1px solid #eeeeee;
+    width: 230px;
 }
 
 /*yeah, Pen's learning css*/
@@ -198,8 +257,8 @@ nav > a > div {
     width: 100%;
     padding-bottom: 5px;
     margin-left: 20px;
-    color: #555555
-    /*transition: color ease-in-out 0.1s, margin-left ease-in-out 0.1s;*/
+    color: #555555;
+    transition: color ease-in-out 0.1s, margin-left ease-in-out 0.1s;
 }
 
 nav:hover h3 a div {
